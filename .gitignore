@@ -7,3 +7,4 @@ doc
 *.iml
 yarn.lock
 package-lock.json
+dist
