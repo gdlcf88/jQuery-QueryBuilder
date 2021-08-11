@@ -24,6 +24,12 @@ jQuery plugin offering an simple interface to create complex queries.
 
 [Download the latest release](https://github.com/mistic100/jQuery-QueryBuilder/releases)
 
+#### With Bower
+
+```bash
+$ bower install jQuery-QueryBuilder
+```
+
 #### With npm
 
 ```bash
@@ -45,7 +51,7 @@ jQuery-QueryBuilder is available on [jsDelivr](https://www.jsdelivr.com/package/
 ($.extendext and doT.js are directly included in the [standalone](https://github.com/mistic100/jQuery-QueryBuilder/blob/master/dist/js/query-builder.standalone.js) file)
 
 ### Browser support
- * Internet Explorer >= 11
+ * Internet Explorer >= 9
  * All other recent browsers
 
 

@@ -32,7 +32,7 @@ QueryBuilder.define('filter-description', function(options) {
     }
     // POPOVER
     else if (options.mode === 'popover') {
-        if (!$.fn.popover || !$.fn.popover.Constructor || !$.fn.popover.Constructor.prototype.fixTitle) {
+        if (!$.fn.popover || !$.fn.popover.Constructor || !$.fn.popover.Constructor.prototype._fixTitle) {
             Utils.error('MissingLibrary', 'Bootstrap Popover is required to use "filter-description" plugin. Get it here: http://getbootstrap.com');
         }
 
@@ -49,7 +49,7 @@ QueryBuilder.define('filter-description', function(options) {
             }
             else {
                 if ($b.length === 0) {
-                    $b = $($.parseHTML('<button type="button" class="btn btn-xs btn-info filter-description" data-toggle="popover"><i class="' + options.icon + '"></i></button>'));
+                    $b = $($.parseHTML('<button type="button" class="btn btn-sm btn-info filter-description" data-toggle="popover"><i class="' + options.icon + '"></i></button>'));
                     $b.prependTo(rule.$el.find(QueryBuilder.selectors.rule_actions));
 
                     $b.popover({
@@ -89,7 +89,7 @@ QueryBuilder.define('filter-description', function(options) {
             }
             else {
                 if ($b.length === 0) {
-                    $b = $($.parseHTML('<button type="button" class="btn btn-xs btn-info filter-description" data-toggle="bootbox"><i class="' + options.icon + '"></i></button>'));
+                    $b = $($.parseHTML('<button type="button" class="btn btn-sm btn-info filter-description" data-toggle="bootbox"><i class="' + options.icon + '"></i></button>'));
                     $b.prependTo(rule.$el.find(QueryBuilder.selectors.rule_actions));
 
                     $b.on('click', function() {
