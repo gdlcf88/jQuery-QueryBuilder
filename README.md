@@ -27,13 +27,13 @@ jQuery plugin offering an simple interface to create complex queries.
 #### With Bower
 
 ```bash
-$ bower install jQuery-QueryBuilder
+$ bower install @duotai/jquery-querybuilder
 ```
 
 #### With npm
 
 ```bash
-$ npm install jQuery-QueryBuilder
+$ npm i @duotai/jquery-querybuilder
 ```
 
 #### Via CDN
